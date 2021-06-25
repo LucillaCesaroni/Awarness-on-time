@@ -1,0 +1,241 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+/*menu hamburger*/
+.toggle-menu {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+    display: none;
+}
+
+.toggle-menu i {
+	position: absolute;
+	display: block;
+	height: 4px;
+	background: #0b3f77;
+	width: 60px;
+	left: 10px;
+	transition: all .3s;
+}
+
+.toggle-menu i:nth-child(1) {
+	top: 40px;
+}
+
+.toggle-menu i:nth-child(2) {
+	top: 55px;
+}
+
+.toggle-menu i:nth-child(3) {
+	top: 70px;
+}
+
+.open-menu i:nth-child(1) {
+	top: 60px;
+	-webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.open-menu i:nth-child(2) {
+	background: transparent;
+}
+
+.open-menu i:nth-child(3) {
+	top: 60px;
+	-webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+}
+
+nav {
+ 	height: 0;
+	opacity: 0;
+    box-sizing: border-box;
+	background: rgba(0, 47, 77, .25);
+	position: fixed;
+	top: 70px;
+	width: 100%;
+    transition: all 1s;
+}
+
+.open-menu ~ nav {
+    opacity: 1;
+    z-index: 2;
+    height: 200vh;
+    margin-top: -10%;
+    padding-top: 50%;
+}
+
+/*MENU A TENDINA*/
+nav ul {
+	padding: 0 10px;
+}
+
+nav li {
+	flex: 1;
+}
+
+nav li a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 6em;
+    line-height: 150%;
+    color: #0b3f77;
+    padding-top: 0%;
+    text-align: center;
+    transition: background .1s;
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+nav li a:hover {
+	background: none;
+}
+
+.navigation ul, .navigation ul li {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.navigation ul {
+    text-align:center;
+    padding:1.5em 0;
+}
+
+.navigation ul li {
+    display:inline;
+    margin-right:0.5em;
+}
+
+.navigation li a {
+    padding:1.5em 1em;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color:#0b3f77;
+}
+
+.navigation li a:hover {
+    color:transparent;
+    -webkit-text-stroke: 1px #0b3f77;
+}
+
+/*fine menu hamburger*/
+
+/*LOGOOOOOOONE*/
+.l-left {
+	float: left;
+    margin-top: 0.7%;
+    margin-right: -40%;
+}
+
+.l-right {
+	float: right;
+}
+
+h1 {
+	line-height: 70px;
+	height: 70px;
+}
+
+h1 a {
+	display: block;
+	padding: 0 10px;
+}
+
+section { 
+	text-align: left;
+}
+
+h2 {
+	font-size: 4em;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-weight: 500; /*TEXT FIRST PAGE*/
+	font-size: 3em;
+    line-height: 130%;
+    color: #0B3F77;
+    margin: auto;
+    width:75%;
+}
+
+.intro {
+    display:none;
+}
+
+h5 {
+    font-weight: 500; /*TEXT SECOND PAGE*/
+	font-size: 1.6em;
+    line-height: 140%;
+    color: #0B3F77;
+    margin: auto;
+    width:75%;
+    column-count: 2;
+    column-gap: 3%;
+    text-align: left;
+}
+
+h6 {
+    line-height: 130%;
+    color: #0B3F77;
+    margin: auto;
+    width:75%;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+/*pallini scrolling
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+	background: #0B3F77;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+}
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+	width: 16px;
+	height: 16px;
+	margin: -8px 0 0 -8px;
+	background: transparent;
+	box-sizing: border-box;
+	border: 2px solid #0B3F77; cerchietti fuori
+}
+*/
+
+/*non far vedere i pallini sulla destra*/
+#fp-nav {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav li {
+		margin-top: 1px;
+	}
+  
+    nav li a {
+    font-size: 1.5em;
+    }
+  
+  .scroll-icon {
+    display: none;
+    }
+    
+}
