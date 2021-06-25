@@ -1,0 +1,305 @@
+/*responsive*/
+
+@media only screen and (max-width: 1125px) {
+    /*menu responsive*/
+    
+    .navigation ul {
+            display: none;
+    }
+
+    .header-top {
+        height: 150px;
+    }
+
+    .l-left img {
+        width: 50%;
+        padding-top: 3%;
+        padding-left: 1%;
+        z-index: 999;
+    }
+
+    h3 {
+        display:none;
+    }
+
+    .toggle-menu {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        position: relative;
+        z-index: 999;
+        float:right;
+    }
+    
+    .intro {
+        display: block;
+        font-weight: 500; /*TEXT FIRST PAGE*/
+        font-size: 5em;
+        color: #0B3F77;
+        margin: auto;
+        width:75%;
+    }
+
+    /* Spiegazione patologie */
+    .mySlides {
+        width: 110%;
+    }
+
+    .mySlides1 {
+       width: 110%;
+    }
+
+    .text {
+        color: #0B3F77;
+        font-size: 2.5em;
+        line-height: 140%;
+        margin:auto;
+        text-align: left;
+        width:71%;
+        font-weight: 500;
+    }
+    
+    .iconaceliachia{
+        width: 11%;
+        top: -14%;
+    }
+
+    .iconaintolleranze {
+        width: 3.5%;
+        top: -10%;
+    }
+    
+    .iconaallergie {
+        width: 12%;
+        top: -12%;
+    }
+
+    h5{
+        font-size: 2.2em;
+        column-count: 1;
+    }
+
+    h6 {
+        font-size: 5em;
+    }
+
+    /*slides pato*/
+    .pulsantiPatologie {
+        margin-top:120%
+    }
+    
+    /* The dots/bullets/indicators */
+    .pallini {
+        font-size: 2.4em;
+    }
+    
+    .w3-section{
+        margin-top:120%;
+        font-size: 2.4em;
+    }
+    
+    .map svg {
+    width: 100%;
+}
+
+    /*Aiutaci a migliorare...*/
+    .pippo {
+        top: 10%;
+        margin-left: 5%;
+        font-size: 3.5em;
+        font-weight: 700;
+        width: 100%;
+        color: white;
+        display: block;
+    }
+
+    .titolone {
+        display: none;
+    }
+
+    /*FORM TOT*/
+    form {
+        width: 90%;
+        font-size: 1.8em;
+        margin-top: 10%
+    }
+
+    /*tendina*/
+    .tendina {
+        position: relative;
+        font-size: 1em;
+        margin-left: 8%;
+        border: 1px solid white;
+    }
+
+    .tendina select {
+        display: none; /*nascondi tendina originale*/
+    }
+
+    .select-selected {
+        background-color: #0b3f77;
+    }
+
+    /* Style the arrow inside the select element: */
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 22px;
+        right: 10px;
+        height: 5px;
+        width: 5px;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+    }
+
+    /* Point the arrow upwards when the select box is open (active): */
+    .select-selected .select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+    }
+
+    /* style the items (options), including the selected item: */
+    .select-items div,.select-selected {
+        color: #ffffff;
+        margin-left: 5%;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+    }
+
+    /* Style items (options): */
+    .select-items {
+        position: absolute;
+        left:0%;
+        background-color: #0b3f77;
+        border: 1px solid white;
+        top: 100%;
+        z-index: 99;
+        width: 100%;
+    }
+
+    /* nascondi elementi quando chiudi box */
+    .select-hide {
+        display: none;
+    }
+
+    .select-items div:hover, .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    /*ALTRO*/
+    /*text*/
+    .altro {
+        width: 90%;
+        position: relative;
+        height: 50px;
+        overflow: hidden;
+        color: white;
+        font-size: 1em;
+        font-weight:400;
+        left: 65px;
+        margin-top:-15px;
+    }
+
+    .altro input:focus + .label-name .content-name, .altro input:visited + .label-name .content-name {
+        font-size: 0.8em;
+        transform: translateY(20%);
+        color: transparent;
+        display: none;
+    }
+
+    .altro input:focus + .label-name::after, .altro input:visited + .label-name::after{
+        transform: translateX(0%);
+        display: none;
+    }
+
+    input[type=submit] {
+        background-color: white;
+        color: #0B3F77;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 24px 80px;
+        border: none;
+        margin-top:5%;
+        margin-left:3%;
+        border-radius: 10px;
+        cursor: pointer;
+        border: solid 2px white;
+        float: left;
+    }
+
+    input {
+        margin-right: 4px;
+    }
+
+    .container {
+        display:block;
+        position: relative;
+        padding-left: 65px;
+        cursor: pointer;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2em;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+
+    /*box personalizzati*/
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 35px;
+        width: 35px;
+        background-color: #0B3F77;
+        border: solid 2px white;
+        border-radius: 25%;
+    }
+
+    .container:over input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    .container input:checked ~ .checkmark {
+        background-color: #0B3F77;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /*tick*/
+    .container .checkmark:after {
+        left: 9px;
+        top: 1px;
+        width: 10px;
+        height: 20px;
+        border:  solid white;
+        border-width: 0 5px 5px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .portrait {
+        width: 80%;
+    }
+
+    .contacts {
+        font-size: 4em;
+        top: 75%;
+    }
+
+     h7{
+        font-size: 2em;
+    }   
+}

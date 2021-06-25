@@ -1,0 +1,599 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+    margin:0;
+}
+
+.legende{
+    z-index: -100;
+    width: 135%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.legende2{
+    display: none;
+}
+
+.legende3{
+    display: none;
+}
+
+/*mappa*/
+iframe{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120vh; 
+    height: 70vh; 
+    margin-top: -2%;
+}
+
+@media only screen and (max-width: 1125px) {
+    iframe{
+        width: 50vh; 
+        height: 36vh; 
+    }
+    .legende{
+        display: none;    
+    }
+    
+    .legende2{
+        z-index: -100;
+        width: 35%;
+        margin-left: 80%;
+        margin-top: -20%;
+        display:inline;
+    }
+    
+    .legende3{
+        z-index: -100;
+        width: 35%;
+        margin-left: -13%;
+        padding-top: 70%;
+        display:inline;
+    }
+}
+
+.header-top {
+	background: #FFF8F3;
+	height: 70px;
+	padding: 0px 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 12;
+	box-sizing: border-box;
+}
+
+/* Spiegazione patologie */
+.text {
+    color: #0B3F77;
+	font-size: 1.3em;
+    line-height: 140%;
+    margin:auto;
+    text-align: left;
+    width:71%;
+    font-weight: 500;
+}
+
+.iconaceliachia{
+    width: 8%;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.iconaintolleranze {
+    width: 2.5%;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.iconaallergie{
+    width: 8%;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.l-left img {
+    width: 20%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    width: 68%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mySlides1 {
+    display: block;
+    width: 68%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pulsantiPatologie {
+    margin-top:30%;
+    padding-top: 4%;
+}
+
+/* The dots/bullets/indicators */
+.pallini {
+    bottom: 20%;
+    border-bottom: 2px solid #0b3f77;
+    color: #0b3f77;
+    padding: 0.5% 0.5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin:6% 1%;
+    cursor: pointer;
+    transition: background-color 0.6s ease; 
+}
+
+/*secondo slideshow*/
+.allergia2016{
+    margin-top: -18%;
+    font-size: 1.5em;
+    color: #00B0AC;
+    margin-left: 10%;
+    margin-bottom: 1.5%;
+}
+
+.intolleranza2016{
+    font-size: 1.5em;
+    color:#6DC4FF;
+    margin-left: 10%;
+    margin-bottom: 1.5%;
+}
+
+.celiachia2016{
+    font-size: 1.5em;
+    color:#FF6E67;
+    margin-left: 10%;
+}
+
+.attivodue, .w3-button:hover {
+    background-color: transparent;
+    border: 2px solid #0b3f77;
+    color: #0b3f77;   
+}
+
+/*mappa*/
+/*
+iframe{
+    z-index: -99;
+    position: absolute;
+    padding-top: 70%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 150vh; 
+    height: 150vh;
+}
+*/
+
+section {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    background-color: #0B3F77;
+    font-weight: 200,300,400,600,800,900;
+    top: 0;
+    height: 100vh;
+    width:100%;
+    display: inline-block;
+}
+
+.titolone {
+    text-align: left;
+    /*padding-left: 12%;*/
+    font-size: 3.8em;
+    font-weight: 700;
+    float: left;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+.pippo {
+    display:none;
+    color: transparent;
+    margin-bottom: -15%;
+    margin-top: 15%;
+}
+
+form {
+    text-align: left;
+    float:left;
+    width: 55%;
+    margin-top:6%;
+    padding-left: 6%;
+}
+
+form p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+}
+
+form h4{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/*
+input [type=checkbox]{
+position: relative;
+cursor: pointer;
+}
+input [type=checkbox]:checked:after{
+position: relative;
+cursor: pointer;
+}
+*/
+
+input {
+    margin-right: 4px;
+}
+
+.container {
+    display:block;
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+/*mini box di default*/
+.container input {
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/*box personalizzati*/
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #0B3F77;
+    border: solid 2px white;
+    border-radius: 25%;
+}
+
+.container:over input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #0B3F77;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/*tick*/
+.container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3.5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*ALTRO*/
+/*text*/
+.altro {
+    width: 90%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    color: white;
+    font-size: 1em;
+    font-weight:400;
+    left: 40px;
+    margin-top:-15px;
+}
+
+.altro input {
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding-top:10px;
+    border: none;
+    outline:none;
+    background-color: #0B3F77;
+    font-size:1em;
+}
+
+.altro label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 75%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid white;
+}
+
+.altro label::after {
+    content:"";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+
+.altro input:focus + .label-name .content-name, .altro input:placeholder-shown + .label-name .content-name {
+    transform: translateY(-125%);
+    font-size: 0.8em;
+    color: white;
+    opacity: 50%;
+}
+
+.altro input:focus + .label-name::after, .altro input:placeholder-shown + .label-name::after{
+    transform: translateX(0%);
+}
+
+.select {
+    position: absolute;
+    left: 30px;
+}
+
+/*tendina*/
+.tendina {
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8em;
+    margin-left: 36px;
+    border: 1px solid white;
+}
+
+.tendina select {
+    display: none; /*nascondi tendina originale*/
+}
+
+.select-selected {
+    background-color: #0b3f77;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected .select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 4px 14px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+/*  background-color: DodgerBlue;*/
+    background-color: #0b3f77;
+    border: 1px solid white;
+    top: 100%;
+    left: -0.8;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+/* nascondi elementi quando chiudi box */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.submit:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: #0B3F77;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 12px 28px;
+    border: none;
+    margin-top:3%;
+    margin-right:8%;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    border: solid 2px white;
+}
+
+.submit input:hover{
+    background-color:#0B3F77;
+    color: white;
+    border: solid 2px white;
+}
+
+/*footer = pagina finale*/
+.portrait {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 35%;
+}
+
+.contacts {
+    font-size: 2em;
+    color: white;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contacts:hover{
+    color:transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+h7{
+    display:block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    position:absolute;
+    bottom:4%;
+    font-size: 0.8em;
+}
+
+h7 a {
+    color: white;
+}
+
+h7 a:hover {    
+    border-bottom: 1px solid white;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  height: 10%;
+  color: white;
+  text-align: center;
+  z-index: 999;    
+}
+
+/*Grazie per aver contribuito*/
+
+.ringraziamenti {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin: auto;
+    width: 50%;
+    color: white;
+    margin-top: 25%;
+}
+
+.ringraziamentilink {
+    display:block;
+    background-color: white;
+    color: #0B3F77;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 12px 28px;
+    border: none;
+    margin-top:3%;
+    margin-right:46%;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    border: solid 2px white;
+    text-decoration: none;
+}
+
+.ringraziamentilink:hover {
+    background-color:#0B3F77;
+    color: white;
+    border: solid 2px white;
+}
